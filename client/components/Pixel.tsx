@@ -1,6 +1,11 @@
 function Pixel() {
     return (
-        <div></div>
+        <div style={{
+            fontFamily: 'Times New Roman',
+            height: '50px',
+            width: '50px',
+            backgroundColor: 'cornflowerblue',
+        }} ></div>
     )
 }
 
