@@ -4,7 +4,7 @@ function Pixel() {
             fontFamily: 'Times New Roman',
             height: '50px',
             width: '50px',
-            backgroundColor: 'cornflowerblue',
+            backgroundColor: 'cornflowerblue', 
         }} ></div>
     )
 }
