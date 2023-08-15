@@ -13,14 +13,39 @@ function Pixel() {
         setColor(getRandomColor);
     }
 
+    const onMouseEnter = () => {
+        setColor('green');
+    }
+
+    const onDoubleClick = () => {
+        setColor('white')
+    }
+
+    const onDragEnter = () => {
+        setColor('yellow')
+    }
+
+    const onKeyPressHandler = () => {
+        console.log('Function created to prevent warning on non-interactive element')
+    }
+
+
     return (
-        <button style={{
+        <div style={{
             fontFamily: 'Times New Roman',
             height: '50px',
             width: '50px',
             backgroundColor: color, 
-        }} onClick={handleClick}>
-        </button>
+        }} 
+            onClick={handleClick} 
+            onMouseEnter={onMouseEnter} 
+            onDoubleClick={onDoubleClick} 
+            onDragEnter={onDragEnter}
+            onKeyPress={onKeyPressHandler}
+            role="button"
+            tabIndex={0}
+            >
+        </div>
     )
 }
 
